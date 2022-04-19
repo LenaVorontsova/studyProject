@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EuM-Ng-10L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -151,10 +151,62 @@
             </objects>
             <point key="canvasLocation" x="1722" y="80"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Map-->
+        <scene sceneID="NC1-rv-yWf">
+            <objects>
+                <viewController id="1CW-Ct-mTW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I4V-Ks-ZWa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="0c1-UC-JxR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="location.circle.fill" catalog="system" id="vbu-7G-Dkp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R4c-1x-1lg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1606" y="834"/>
+        </scene>
+        <!--Friends-->
+        <scene sceneID="VYp-d9-cjr">
+            <objects>
+                <viewController id="N9x-M5-2tR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jSl-uc-9Ri">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="L0O-Ii-Djt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Friends" image="person.2.fill" catalog="system" id="KZw-tF-CQc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r1U-KO-vvc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-720" y="834"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="HUi-Qg-xTf">
+            <objects>
+                <tabBarController id="jxu-ss-2fB" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I1x-pI-10e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="EuM-Ng-10L" kind="relationship" relationship="viewControllers" id="ehC-g9-V5w"/>
+                        <segue destination="N9x-M5-2tR" kind="relationship" relationship="viewControllers" id="Gue-zl-Dlo"/>
+                        <segue destination="1CW-Ct-mTW" kind="relationship" relationship="viewControllers" id="AS2-4u-SIc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ogZ-xp-ayp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1203" y="27"/>
+        </scene>
+        <!--Profile-->
         <scene sceneID="mCo-ca-qTZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EuM-Ng-10L" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="Jei-wb-GaM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ydn-dw-aoh">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -172,6 +224,9 @@
     </scenes>
     <resources>
         <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="location.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="person.2.fill" catalog="system" width="128" height="80"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="photoProfile" width="3840" height="3840"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
