@@ -14,4 +14,8 @@ class FullScreenCollectionViewCell: UICollectionViewCell, UIScrollViewDelegate {
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return imageView
     }
+    
+    func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
+        scrollView.zoomScale = 1.0
+    }
 }

@@ -10,6 +10,7 @@ import UIKit
 class ProfileViewController: UIViewController {
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var nameLabel: UILabel!
     
     let photoGalary = PhotoGalary()
     let identifire = "PhotoCollectionViewCell"
@@ -27,7 +28,17 @@ class ProfileViewController: UIViewController {
         collectionView.register(UINib(nibName: "PhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: identifire)
     }
 
-
+    @IBAction func settingsButton(_ sender: Any) {
+        performSegue(withIdentifier: "settingsSegue", sender: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let name = UserDefaults.standard.string(forKey: "nameKey") {
+            nameLabel.text = name
+        }
+    }
+    
 }
 
 extension ProfileViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource {
