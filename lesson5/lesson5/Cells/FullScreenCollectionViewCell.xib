@@ -16,23 +16,41 @@
                 <rect key="frame" x="0.0" y="0.0" width="205" height="202"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5PT-53-P5T">
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5eO-fq-sTI">
                         <rect key="frame" x="0.0" y="0.0" width="205" height="202"/>
-                    </imageView>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5PT-53-P5T">
+                                <rect key="frame" x="0.0" y="0.0" width="205" height="202"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5PT-53-P5T" secondAttribute="trailing" id="2sU-xP-gos"/>
+                            <constraint firstAttribute="height" secondItem="5PT-53-P5T" secondAttribute="height" id="7LV-Qd-XBY"/>
+                            <constraint firstAttribute="bottom" secondItem="5PT-53-P5T" secondAttribute="bottom" id="D25-oI-Y6N"/>
+                            <constraint firstItem="5PT-53-P5T" firstAttribute="leading" secondItem="0Au-XQ-tpT" secondAttribute="leading" id="F9b-4G-fa4"/>
+                            <constraint firstItem="5PT-53-P5T" firstAttribute="top" secondItem="0Au-XQ-tpT" secondAttribute="top" id="HQP-Qi-Rgr"/>
+                            <constraint firstItem="5PT-53-P5T" firstAttribute="bottom" secondItem="0Au-XQ-tpT" secondAttribute="bottom" id="pPz-Ta-k1y"/>
+                            <constraint firstItem="5PT-53-P5T" firstAttribute="trailing" secondItem="0Au-XQ-tpT" secondAttribute="trailing" id="uJ1-4f-cub"/>
+                            <constraint firstAttribute="width" secondItem="5PT-53-P5T" secondAttribute="width" id="yTg-wY-Bjx"/>
+                        </constraints>
+                        <viewLayoutGuide key="contentLayoutGuide" id="U9T-8O-Qft"/>
+                        <viewLayoutGuide key="frameLayoutGuide" id="0Au-XQ-tpT"/>
+                    </scrollView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="5PT-53-P5T" secondAttribute="bottom" id="GFG-zV-uj6"/>
-                <constraint firstAttribute="trailing" secondItem="5PT-53-P5T" secondAttribute="trailing" id="Imv-wL-tTd"/>
-                <constraint firstItem="5PT-53-P5T" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="T1t-9a-Vmu"/>
-                <constraint firstItem="5PT-53-P5T" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dQ5-EF-7yV"/>
+                <constraint firstItem="5eO-fq-sTI" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="3JN-hT-LTU"/>
+                <constraint firstItem="5eO-fq-sTI" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="5GC-Nq-MBT"/>
+                <constraint firstItem="5eO-fq-sTI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QNu-nB-Kc1"/>
+                <constraint firstItem="5eO-fq-sTI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dwg-I9-n7z"/>
             </constraints>
             <size key="customSize" width="205" height="202"/>
             <connections>
                 <outlet property="imageView" destination="5PT-53-P5T" id="0Ub-nu-n7E"/>
+                <outlet property="scrollView" destination="5eO-fq-sTI" id="CRl-A2-fUv"/>
             </connections>
-            <point key="canvasLocation" x="250.00000000000003" y="160.71428571428569"/>
+            <point key="canvasLocation" x="250.00000000000003" y="160.04464285714286"/>
         </collectionViewCell>
     </objects>
 </document>
