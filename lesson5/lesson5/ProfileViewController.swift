@@ -49,6 +49,13 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout, UICollectio
         let spacing = CGFloat((countCells+1))+offset/CGFloat(countCells)
         return CGSize(width: widthCell - spacing, height: hightCell-(offset*2))
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "FullScreenViewController") as! FullScreenViewController
+        vc.photoGalary = photoGalary
+        vc.indexPath = indexPath
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 
