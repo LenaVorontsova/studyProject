@@ -22,6 +22,8 @@
 		84F04D59281178DA003D12A4 /* FullScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F04D57281178DA003D12A4 /* FullScreenCollectionViewCell.swift */; };
 		84F04D5A281178DA003D12A4 /* FullScreenCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F04D58281178DA003D12A4 /* FullScreenCollectionViewCell.xib */; };
 		84F04D5C28118D44003D12A4 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F04D5B28118D44003D12A4 /* SettingsTableViewController.swift */; };
+		84F04D5E2818730F003D12A4 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F04D5D2818730F003D12A4 /* FriendsViewController.swift */; };
+		84F04D6028187706003D12A4 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F04D5F28187706003D12A4 /* UserTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		84F04D57281178DA003D12A4 /* FullScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCollectionViewCell.swift; sourceTree = "<group>"; };
 		84F04D58281178DA003D12A4 /* FullScreenCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullScreenCollectionViewCell.xib; sourceTree = "<group>"; };
 		84F04D5B28118D44003D12A4 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		84F04D5D2818730F003D12A4 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		84F04D5F28187706003D12A4 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 				8419E9EE28108E8800D734F7 /* Cells */,
 				84F04D5528117794003D12A4 /* FullScreenViewController.swift */,
 				84F04D5B28118D44003D12A4 /* SettingsTableViewController.swift */,
+				84F04D5D2818730F003D12A4 /* FriendsViewController.swift */,
 			);
 			path = lesson5;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 				8419E9EA28108E6500D734F7 /* PhotoCollectionViewCell.swift */,
 				84F04D57281178DA003D12A4 /* FullScreenCollectionViewCell.swift */,
 				84F04D58281178DA003D12A4 /* FullScreenCollectionViewCell.xib */,
+				84F04D5F28187706003D12A4 /* UserTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -181,6 +187,8 @@
 				84F04D5628117794003D12A4 /* FullScreenViewController.swift in Sources */,
 				8419E92B2800CCF100D734F7 /* AppDelegate.swift in Sources */,
 				84F04D59281178DA003D12A4 /* FullScreenCollectionViewCell.swift in Sources */,
+				84F04D6028187706003D12A4 /* UserTableViewCell.swift in Sources */,
+				84F04D5E2818730F003D12A4 /* FriendsViewController.swift in Sources */,
 				84F04D5C28118D44003D12A4 /* SettingsTableViewController.swift in Sources */,
 				8419E9EC28108E6500D734F7 /* PhotoCollectionViewCell.swift in Sources */,
 				8419E9422800CE1600D734F7 /* SettingsViewController.swift in Sources */,
