@@ -24,6 +24,9 @@
 		84F04D5C28118D44003D12A4 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F04D5B28118D44003D12A4 /* SettingsTableViewController.swift */; };
 		84F04D5E2818730F003D12A4 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F04D5D2818730F003D12A4 /* FriendsViewController.swift */; };
 		84F04D6028187706003D12A4 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F04D5F28187706003D12A4 /* UserTableViewCell.swift */; };
+		84F04D62281AAC6A003D12A4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F04D61281AAC6A003D12A4 /* User.swift */; };
+		84F04D64281AAD72003D12A4 /* ModelUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F04D63281AAD72003D12A4 /* ModelUser.swift */; };
+		84F04D66281AB9BE003D12A4 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F04D65281AB9BD003D12A4 /* UserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		84F04D5B28118D44003D12A4 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		84F04D5D2818730F003D12A4 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		84F04D5F28187706003D12A4 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		84F04D61281AAC6A003D12A4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		84F04D63281AAD72003D12A4 /* ModelUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUser.swift; sourceTree = "<group>"; };
+		84F04D65281AB9BD003D12A4 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,9 @@
 				84F04D5528117794003D12A4 /* FullScreenViewController.swift */,
 				84F04D5B28118D44003D12A4 /* SettingsTableViewController.swift */,
 				84F04D5D2818730F003D12A4 /* FriendsViewController.swift */,
+				84F04D61281AAC6A003D12A4 /* User.swift */,
+				84F04D63281AAD72003D12A4 /* ModelUser.swift */,
+				84F04D65281AB9BD003D12A4 /* UserViewController.swift */,
 			);
 			path = lesson5;
 			sourceTree = "<group>";
@@ -181,9 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F04D62281AAC6A003D12A4 /* User.swift in Sources */,
+				84F04D66281AB9BE003D12A4 /* UserViewController.swift in Sources */,
 				8419E92F2800CCF100D734F7 /* ProfileViewController.swift in Sources */,
 				8419E9352800CCF100D734F7 /* lesson5.xcdatamodeld in Sources */,
 				8419E9E928108D3600D734F7 /* PhotoGalary.swift in Sources */,
+				84F04D64281AAD72003D12A4 /* ModelUser.swift in Sources */,
 				84F04D5628117794003D12A4 /* FullScreenViewController.swift in Sources */,
 				8419E92B2800CCF100D734F7 /* AppDelegate.swift in Sources */,
 				84F04D59281178DA003D12A4 /* FullScreenCollectionViewCell.swift in Sources */,
