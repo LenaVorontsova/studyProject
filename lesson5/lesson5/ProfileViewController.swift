@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -17,6 +17,8 @@ class ProfileViewController: UIViewController {
     let countCells = 3
     let offset:CGFloat = 2.0
     
+    let imagePicker = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         avatarImage.layer.borderWidth = 3.0
@@ -25,7 +27,31 @@ class ProfileViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        imagePicker.delegate = self
+        
         collectionView.register(UINib(nibName: "PhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: identifire)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapOnImage(_:)))
+        avatarImage.addGestureRecognizer(tapGesture)
+        avatarImage.isUserInteractionEnabled = true
+    }
+    
+    @objc func tapOnImage(_ sender: UITapGestureRecognizer) {
+        let alert = UIAlertController(title: "Image", message: nil, preferredStyle: .actionSheet)
+        let actionPhoto = UIAlertAction(title: "From photo gallery", style: .default) { (alert) in
+            self.imagePicker.sourceType = .photoLibrary
+            self.present(self.imagePicker, animated: true, completion: nil)
+        }
+        let actionCamera = UIAlertAction(title: "From camera", style: .default) { (alert) in
+            self.imagePicker.sourceType = .camera
+            self.present(self.imagePicker, animated: true, completion: nil)
+        }
+        let actionCancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alert.addAction(actionPhoto)
+        alert.addAction(actionCamera)
+        alert.addAction(actionCancel)
+        present(alert, animated: true, completion: nil)
     }
 
     @IBAction func settingsButton(_ sender: Any) {
@@ -66,6 +92,15 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout, UICollectio
         vc.photoGalary = photoGalary
         vc.indexPath = indexPath
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+extension ProfileViewController {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            avatarImage.image = pickedImage
+        }
+        dismiss(animated: true, completion: nil)
     }
 }
 
