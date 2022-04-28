@@ -40,6 +40,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
         let alert = UIAlertController(title: "Image", message: nil, preferredStyle: .actionSheet)
         let actionPhoto = UIAlertAction(title: "From photo gallery", style: .default) { (alert) in
             self.imagePicker.sourceType = .photoLibrary
+            self.imagePicker.allowsEditing = true
             self.present(self.imagePicker, animated: true, completion: nil)
         }
         let actionCamera = UIAlertAction(title: "From camera", style: .default) { (alert) in
@@ -97,7 +98,7 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout, UICollectio
 
 extension ProfileViewController {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+        if let pickedImage = info[UIImagePickerController.InfoKey.editedImage ] as? UIImage {
             avatarImage.image = pickedImage
         }
         dismiss(animated: true, completion: nil)

@@ -179,20 +179,20 @@
                             <tableViewSection headerTitle="Profile" id="HCp-gN-csR">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="xeN-YM-fID">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xeN-YM-fID" id="n3k-BO-Bj5">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqo-eA-uyI">
-                                                    <rect key="frame" x="20" y="11" width="45" height="21"/>
+                                                    <rect key="frame" x="20" y="11" width="45" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lcT-dY-cQw">
-                                                    <rect key="frame" x="194" y="4.5" width="200" height="34"/>
+                                                    <rect key="frame" x="194" y="5" width="200" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="200" id="oj0-Qw-Jbd"/>
                                                     </constraints>
@@ -217,7 +217,7 @@
                             <tableViewSection headerTitle="Notifications" id="OjH-M1-drb">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="PAi-u7-Fi1">
-                                        <rect key="frame" x="0.0" y="154.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="155" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PAi-u7-Fi1" id="XKZ-QO-d8l">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -245,7 +245,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="9vh-Zb-jX0">
-                                        <rect key="frame" x="0.0" y="198" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="198.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9vh-Zb-jX0" id="FHA-Da-k3S">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -342,14 +342,28 @@
         <!--Map-->
         <scene sceneID="NC1-rv-yWf">
             <objects>
-                <viewController id="1CW-Ct-mTW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier=" " id="1CW-Ct-mTW" customClass="MapViewController" customModule="lesson5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I4V-Ks-ZWa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="12Z-2p-DDd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="0c1-UC-JxR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0c1-UC-JxR" firstAttribute="trailing" secondItem="12Z-2p-DDd" secondAttribute="trailing" id="JTb-kN-v1W"/>
+                            <constraint firstItem="0c1-UC-JxR" firstAttribute="bottom" secondItem="12Z-2p-DDd" secondAttribute="bottom" id="adi-L5-NMZ"/>
+                            <constraint firstItem="12Z-2p-DDd" firstAttribute="top" secondItem="I4V-Ks-ZWa" secondAttribute="top" id="jIS-C6-Ujp"/>
+                            <constraint firstItem="12Z-2p-DDd" firstAttribute="leading" secondItem="0c1-UC-JxR" secondAttribute="leading" id="vyM-eK-GXX"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="location.circle.fill" catalog="system" id="vbu-7G-Dkp"/>
+                    <connections>
+                        <outlet property="mapView" destination="12Z-2p-DDd" id="ZuQ-JY-vgX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R4c-1x-1lg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

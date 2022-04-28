@@ -27,6 +27,7 @@
 		84F04D62281AAC6A003D12A4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F04D61281AAC6A003D12A4 /* User.swift */; };
 		84F04D64281AAD72003D12A4 /* ModelUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F04D63281AAD72003D12A4 /* ModelUser.swift */; };
 		84F04D66281AB9BE003D12A4 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F04D65281AB9BD003D12A4 /* UserViewController.swift */; };
+		84F04D68281AC771003D12A4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F04D67281AC771003D12A4 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		84F04D61281AAC6A003D12A4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		84F04D63281AAD72003D12A4 /* ModelUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUser.swift; sourceTree = "<group>"; };
 		84F04D65281AB9BD003D12A4 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		84F04D67281AC771003D12A4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				84F04D61281AAC6A003D12A4 /* User.swift */,
 				84F04D63281AAD72003D12A4 /* ModelUser.swift */,
 				84F04D65281AB9BD003D12A4 /* UserViewController.swift */,
+				84F04D67281AC771003D12A4 /* MapViewController.swift */,
 			);
 			path = lesson5;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				8419E9EC28108E6500D734F7 /* PhotoCollectionViewCell.swift in Sources */,
 				8419E9422800CE1600D734F7 /* SettingsViewController.swift in Sources */,
 				8419E92D2800CCF100D734F7 /* SceneDelegate.swift in Sources */,
+				84F04D68281AC771003D12A4 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
